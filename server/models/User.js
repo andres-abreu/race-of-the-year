@@ -3,12 +3,18 @@ const bcrypt = require('bcrypt');
 
 const userSchema = new Schema(
     {
-        username: {
+        firstName: {
             type: String,
             required: true,
-            unique: true,
-            trim: true
+            trim: true,
         },
+        
+        lastName: {
+            type: String,
+            required: true,
+            trim: true,
+        },
+
         email: {
             type: String,
             required: true,
@@ -31,6 +37,12 @@ userSchema.pre('save', async function(next) {
 
     next();
 })
+
+
+userSchema.method.isCorrectPassword = async function(password) {
+    return bcrypt.compare(password, this.password);
+};
+
 
 const User = model('User', userSchema)
 
