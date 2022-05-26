@@ -13,6 +13,11 @@ function Nav() {
                 Logout
               </a>
             </li>
+            <li className="mx-1">
+              <Link to="/runnerList">
+                Runners
+              </Link>
+            </li>
           </ul>
         );
       } else {
