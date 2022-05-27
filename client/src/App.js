@@ -11,6 +11,7 @@ import Nav from './components/Nav'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import RunnerList from './components/RunnersList'
+import Shop from './components/Shop'
 
 const httpLink = createHttpLink({
   uri: '/graphql'
@@ -41,7 +42,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} /> 
-            <Route path="/runnerList" element={<RunnerList />} />   
+            <Route path="/runnerList" element={<RunnerList />} />
+            <Route path="/shop" element={<Shop />} />   
           </Routes>
         </Router>
       </ApolloProvider>   

@@ -18,6 +18,11 @@ function Nav() {
                 Runners
               </Link>
             </li>
+            <li className="mx-1">
+              <Link to="/shop">
+                Shop
+              </Link>
+            </li>
           </ul>
         );
       } else {
