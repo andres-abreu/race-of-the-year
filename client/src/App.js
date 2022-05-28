@@ -13,6 +13,7 @@ import Signup from './pages/Signup'
 import RunnerList from './components/RunnersList'
 import Shop from './components/Shop'
 
+
 const httpLink = createHttpLink({
   uri: '/graphql'
 });
@@ -36,16 +37,16 @@ const client = new ApolloClient({
 function App() {
   return (
       <ApolloProvider client={client}>
-        <Router>
-          <Nav />
-          <Routes>  
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} /> 
-            <Route path="/runnerList" element={<RunnerList />} />
-            <Route path="/shop" element={<Shop />} />   
-          </Routes>
-        </Router>
+          <Router>
+            <Nav />
+            <Routes>  
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} /> 
+              <Route path="/runnerList" element={<RunnerList />} />
+              <Route path="/shop" element={<Shop />} />    
+            </Routes>
+          </Router>
       </ApolloProvider>   
   );
 }
