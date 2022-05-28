@@ -17,8 +17,9 @@ const RunnerList = () => {
         <div className="flex-row justify-space-between">
             <div className="col-12 mb-3">
                 <h1>Registered Runners</h1>
-                <div>
-                    <table className="table">
+                <div className='table-list'>
+                    <table className="table table-hover table-sm ">
+                        <caption>List of runners</caption>
                         <thead>
                             <tr>
                                 <th scope="col">#</th>

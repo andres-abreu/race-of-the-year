@@ -7,12 +7,21 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
+        <ul className="collapse navbar-collapse navbar-expand-lg" id="navbarSupportedContent">
+          <li className="nav-item nav-link active">
+            <a style={{ textDecoration: 'none' , color:'white'}} href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
+          </li>
+          <li className="nav-item nav-link active">
+            <Link style={{ textDecoration: 'none' }} to="/runnerList" className="link">
+              Runners
+            </Link>
+          </li>
+          <li className="nav-item nav-link active">
+            <Link style={{ textDecoration: 'none' }} to="/shop" className="link">
+              Shop
+            </Link>
           </li>
         </ul>
       );
@@ -21,12 +30,12 @@ function Nav() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item nav-link active">
-              <Link style={{ textDecoration:'none'}} to="/signup">
+              <Link style={{ textDecoration: 'none' }} to="/signup" className="link">
                 Signup
               </Link>
             </li>
             <li className="nav-item nav-link active">
-              <Link style={{ textDecoration:'none'}} to="/login">
+              <Link style={{ textDecoration: 'none' }} to="/login" className="link">
                 Login
               </Link>
             </li>

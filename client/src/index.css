@@ -4,7 +4,8 @@
 * {
   margin: 0;
   font-family: "Bebas Neue";
-  color: rgb(17, 15, 15);
+  color: #5d5c61;
+  background-color: #557a95;
 }
 
 /***NavBar***/
@@ -21,25 +22,59 @@
 .navbar ul {
   margin-right: auto;
   text-decoration: none;
+  font-size: 28px;
 }
 
 nav a.nav-link {
   text-transform: uppercase;
+  color: white;
+  
 }
 
 .navbar-nav>li>a:hover {
   margin-right: 0.75rem;
-  color: #f1356d !important;
+  color: #7395AE !important;
 }
 
-.navbar-brand {
-  color: #f1356d !important;
+.navbar-brand>h1 {
+  color: #7395ae !important;
 
 }
 
 .navbar h1 {
-  color:royalblue
+  color: white;
+}
+
+.link {
+  color: white;
 }
 
 
+/****Home ***/
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 2;
+  min-width: 100%;
+  min-height: 100%;
+}
+.container h1{
+  color: white;
+}
 
+.container p{
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/***Runners ***/
+
+.col-12 h1 {
+  color:white;
+  text-align: center;
+}
+
+.table-list{
+  color: white;
+}
