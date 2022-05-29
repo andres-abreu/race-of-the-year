@@ -4,39 +4,6 @@ import { Link } from "react-router-dom";
 
 function Nav() {
 
-<<<<<<< HEAD
-    function showNavigation() {
-      if (Auth.loggedIn()) {
-        return (
-          <ul className="flex-row">
-            <li className="mx-1">
-              <a href="/" onClick={() => Auth.logout()}>
-                Logout
-              </a>
-            </li>
-            <li className="mx-1">
-              <Link to="/runnerList">
-                Runners
-              </Link>
-            </li>
-            <li className="mx-1">
-              <Link to="/shop">
-                Shop
-              </Link>
-            </li>
-            <li className="mx-1">
-              <Link to="/raceMap">
-                Race Map
-              </Link>
-            </li>
-          </ul>
-        );
-      } else {
-        return (
-          <ul className="flex-row">
-            <li className="mx-1">
-              <Link to="/signup">
-=======
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
@@ -64,7 +31,6 @@ function Nav() {
           <ul className="navbar-nav mr-auto">
             <li className="nav-item nav-link active">
               <Link style={{ textDecoration: 'none' }} to="/signup" className="link">
->>>>>>> 517a52242b413cc4c71e3a3d9a194262aae85dec
                 Signup
               </Link>
             </li>
