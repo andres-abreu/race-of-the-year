@@ -8,6 +8,7 @@ const Shop = () => {
     const products = data && data.products
     const [cart, setCart] = useState([])
     const [page, setPage] = useState('products')
+    
     const addToCart = (product) => {
         setCart([...cart, product])
     }
@@ -39,10 +40,24 @@ const Shop = () => {
         )
     }
 
+    const deleteProduct = (product) => {
+        const name = product.name
+        setCart(cart.filter(product => product.name !== name))
+    }
+
+
     const renderCart = () => {
+        let total = 0
+        cart.forEach(product => {
+            total += product.price
+            return total
+        })
+        
         return (
             <>
             <button className="btn btn-primary" onClick={() => setPage("products")}>Go to Products</button>
+            <div className="container mt-5">
+                <div className="row">
             {cart && 
             cart
             .map(product => (
@@ -52,14 +67,19 @@ const Shop = () => {
                     <div className="card-body">
                         <h5 className="card-title">{product.name}</h5>
                         <p className="card-text">{product.description}</p>
-                        <button className="btn btn-primary btn-block" onClick={() => addToCart(product)}>Add To Cart</button>
                         <div className="card-footer text-muted">
                             {product.price}
                         </div>
                     </div>
                     </div>
+                    <button className="btn btn-primary" onClick={() => deleteProduct(product)}>Delete</button>
                 </div>
             ))}
+            </div>
+            </div>
+            <button className="btn btn-primary">Go to Checkout</button>
+            
+            <button className="btn btn-success">Your total is {total}</button>
             </>
         )
     }
