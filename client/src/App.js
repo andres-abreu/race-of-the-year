@@ -12,7 +12,7 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import RunnerList from './components/RunnersList'
 import Shop from './components/Shop'
-
+import RaceMap from './components/RaceMap'
 
 const httpLink = createHttpLink({
   uri: '/graphql'
@@ -44,7 +44,8 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} /> 
               <Route path="/runnerList" element={<RunnerList />} />
-              <Route path="/shop" element={<Shop />} />    
+              <Route path="/shop" element={<Shop />} /> 
+              <Route path="/raceMap" element={<RaceMap />} />   
             </Routes>
           </Router>
       </ApolloProvider>   

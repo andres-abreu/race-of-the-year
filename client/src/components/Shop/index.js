@@ -16,7 +16,7 @@ const Shop = () => {
     const renderProducts = () => {
         return (
             <>
-            <button className="btn btn-primary" onClick={() => setPage("cart")}>Go to Cart ({cart.length})</button>
+            <button className="btn btn-primary" onClick={() => setPage("cart")}> Cart ({cart.length})</button>
             <div className="container mt-5">
                 <div className="row">
                     {products && products.map(product => (
@@ -55,7 +55,7 @@ const Shop = () => {
         
         return (
             <>
-            <button className="btn btn-primary" onClick={() => setPage("products")}>Go to Products</button>
+            <button className="btn btn-primary" onClick={() => setPage("products")}>Back to Shop</button>
             <div className="container mt-5">
                 <div className="row">
             {cart && 
@@ -77,18 +77,27 @@ const Shop = () => {
             ))}
             </div>
             </div>
-            <button className="btn btn-primary">Go to Checkout</button>
+            {cart.length && 
+            <>
+            <button className="btn btn-primary" onClick={() => setPage("checkout")}>Go to Checkout</button>
             
             <button className="btn btn-success">Your total is {total}</button>
+            </>}
             </>
         )
     }
     
-    
+    const renderCheckout = () => {
+        return (
+            <h1>Checkout</h1>
+        )
+    }
+
     return (
         <>
         {page === 'products' && renderProducts()}
         {page === 'cart' && renderCart()}
+        {page === 'checkout' && renderCheckout()}
         </>
     )
 }

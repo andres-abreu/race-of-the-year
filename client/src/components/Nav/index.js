@@ -23,6 +23,11 @@ function Nav() {
                 Shop
               </Link>
             </li>
+            <li className="mx-1">
+              <Link to="/raceMap">
+                Race Map
+              </Link>
+            </li>
           </ul>
         );
       } else {
