@@ -40,7 +40,7 @@ function Nav() {
               </Link>
             </li>
             <li className="nav-item nav-link active">
-              <Link style={{ textDecoration:'none'}} to="/Store">
+              <Link style={{ textDecoration:'none'}} to="/Store" className="link">
                 Store
               </Link>
             </li>

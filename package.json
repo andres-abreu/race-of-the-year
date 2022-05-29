@@ -1,11 +1,7 @@
 {
   "dependencies": {
     "jsonwebtoken": "^8.5.1",
-<<<<<<< HEAD
-    "react-use-cart": "^1.13.0"
-=======
     "react-router-dom": "^6.3.0"
->>>>>>> ccf7715 (update header)
   },
   "name": "race-of-the-year",
   "version": "1.0.0",
