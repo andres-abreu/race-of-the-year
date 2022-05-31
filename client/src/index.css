@@ -3,9 +3,9 @@
 /* base styles */
 * {
   margin: 0;
-  font-family: "Bebas Neue";
-  color: #5d5c61;
-  background-color: #557a95;
+  /* font-family: "Bebas Neue"; */
+  color: #000000;
+  background-color: #ffffff;
 }
 
 /***NavBar***/
@@ -20,35 +20,42 @@
 
 /*---Menu link---*/
 .navbar ul {
-  margin-right: auto;
+  /* margin-right: auto; */
   text-decoration: none;
   font-size: 28px;
 }
 
 nav a.nav-link {
   text-transform: uppercase;
-  color: white;
+  color: rgb(0, 0, 0);
 
 }
 
 .navbar-nav>li>a:hover {
   margin-right: 0.75rem;
-  color: #7395AE !important;
+  color: #000000;
 }
 
 .navbar-brand>h1 {
-  color: #7395ae !important;
+  color: #000000;
 
 }
 
 .navbar h1 {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .link {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
+th {
+  font-size:2em;
+}
+
+td {
+  font-size:1.5em;
+}
 
 /****Home ***/
 .container video {
@@ -69,19 +76,19 @@ nav a.nav-link {
 }
 
 .container h1 {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .container p {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 /***Runners ***/
 
 .col-12 h1 {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -129,4 +136,5 @@ nav a.nav-link {
 .clock section small {
   color: silver;
   text-shadow: none;
+  color: rgb(0, 0, 0);
 }

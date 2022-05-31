@@ -16,19 +16,22 @@ const Shop = () => {
     const renderProducts = () => {
         return (
             <>
-            <button className="btn btn-primary" onClick={() => setPage("cart")}> Cart ({cart.length})</button>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button className="btn btn-primary btn-cart m-3" onClick={() => setPage("cart")}> Cart ({cart.length})</button>
+            </div>
+            
             <div className="container mt-5">
                 <div className="row">
                     {products && products.map(product => (
                         <div key={product._id} className="col-md-4">
                             <div className="thumbnail">
                             <img className="card-img-top" src={`/images/${product.image}`} alt={product.name} />
-                            <div className="card-body">
-                                <h5 className="card-title">{product.name}</h5>
+                            <div className="card-body product-card-text">
+                                <h5 className="card-title product-title">{product.name}</h5>
                                 <p className="card-text">{product.description}</p>
                                 <button className="btn btn-primary btn-block" onClick={() => addToCart(product)}>Add To Cart</button>
-                                <div className="card-footer text-muted">
-                                    {product.price}
+                                <div className="card-footer product-price">
+                                    ${product.price}
                                 </div>
                             </div>
                             </div>
@@ -55,7 +58,13 @@ const Shop = () => {
         
         return (
             <>
-            <button className="btn btn-primary" onClick={() => setPage("products")}>Back to Shop</button>
+            <div className="nav-checkout-shop">
+                <button className="btn btn-primary" onClick={() => setPage("products")}>Back to Shop</button>
+                {cart.length && 
+                <div className="check-total-container">
+                <button className="btn btn-primary" onClick={() => setPage("checkout")}>Go to Checkout ${total}</button>
+                </div>}
+            </div>
             <div className="container mt-5">
                 <div className="row">
             {cart && 
@@ -64,25 +73,21 @@ const Shop = () => {
                 <div key={product._id} className="col-md-4">
                     <div className="thumbnail">
                     <img className="card-img-top" src={`/images/${product.image}`} alt={product.name} />
-                    <div className="card-body">
+                    <div className="card-body cart-card-text">
                         <h5 className="card-title">{product.name}</h5>
                         <p className="card-text">{product.description}</p>
                         <div className="card-footer text-muted">
                             {product.price}
                         </div>
+                        <button className="btn btn-primary" onClick={() => deleteProduct(product)}>Delete</button>
                     </div>
                     </div>
-                    <button className="btn btn-primary" onClick={() => deleteProduct(product)}>Delete</button>
+                    
                 </div>
             ))}
             </div>
             </div>
-            {cart.length && 
-            <>
-            <button className="btn btn-primary" onClick={() => setPage("checkout")}>Go to Checkout</button>
-            
-            <button className="btn btn-success">Your total is {total}</button>
-            </>}
+
             </>
         )
     }

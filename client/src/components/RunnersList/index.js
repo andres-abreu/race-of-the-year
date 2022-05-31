@@ -19,7 +19,7 @@ const RunnerList = () => {
                 <h1>Registered Runners</h1>
                 <div className='table-list'>
                     <table className="table table-hover table-sm ">
-                        <caption>List of runners</caption>
+                        <caption>Registered Runners</caption>
                         <thead>
                             <tr>
                                 <th scope="col">#</th>

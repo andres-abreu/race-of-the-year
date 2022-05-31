@@ -9,7 +9,7 @@ function Nav() {
       return (
         <ul className="collapse navbar-collapse navbar-expand-lg" id="navbarSupportedContent">
           <li className="nav-item nav-link active">
-            <a style={{ textDecoration: 'none' , color:'white'}} href="/" onClick={() => Auth.logout()}>
+            <a style={{ textDecoration: 'none' , color:'black'}} href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
           </li>
@@ -21,6 +21,11 @@ function Nav() {
           <li className="nav-item nav-link active">
             <Link style={{ textDecoration: 'none' }} to="/shop" className="link">
               Shop
+            </Link>
+          </li>
+          <li className="nav-item nav-link active">
+            <Link style={{ textDecoration: 'none' }} to="/raceMap" className="link">
+              Race Map
             </Link>
           </li>
         </ul>
@@ -37,11 +42,6 @@ function Nav() {
             <li className="nav-item nav-link active">
               <Link style={{ textDecoration: 'none' }} to="/login" className="link">
                 Login
-              </Link>
-            </li>
-            <li className="nav-item nav-link active">
-              <Link style={{ textDecoration:'none'}} to="/Store" className="link">
-                Store
               </Link>
             </li>
           </ul>
