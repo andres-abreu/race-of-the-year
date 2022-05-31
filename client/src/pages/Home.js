@@ -10,6 +10,7 @@ const Home = () => {
     
         <>
         <Clock/>
+        
         <section classNameName="">
             <div classNameName="container d-flex flex-column">
                 <h1 classNameName="text-center ">Welcome to the race of the year</h1>
