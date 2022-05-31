@@ -1,7 +1,6 @@
-
-
 import React from 'react';
 import Clock from '../components/Clock';
+import homepage from '../assets/css/homepage.css';
 
 
 const Home = () => {
@@ -16,7 +15,7 @@ const Home = () => {
                 <h1 classNameName="text-center ">Welcome to the race of the year</h1>
                 <p>"Life is short. Running make it seem longer." by Baron Hansen</p>  
             </div>
-            <video autoPlay loop muted>
+            <video autoPlay muted loop id="thevideo">
                 <source src="images/runners.mp4" type="video/mp4"></source>
             </video>
         </section>

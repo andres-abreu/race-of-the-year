@@ -59,7 +59,7 @@ function Nav() {
         <div>
         <h1 className="navbar-brand ml-auto">
           <Link style={{ textDecoration:'none'}} to="/">
-            <h1 className="Header">The race of the year</h1>
+            <h1 className="Header">RACE OF THE YEAR</h1>
           </Link>
         </h1>
         </div>
