@@ -1,7 +1,8 @@
 import React, { Fragment, useState, useEffect } from "react";
 
 //Countdown Clock Function
-function Timer() {
+const Clock = () => {
+
   const [timerDays, setTimerDays] = useState();
   const [timerHours, setTimerHours] = useState();
   const [timerMinutes, setTimerMinutes] = useState();
@@ -10,7 +11,7 @@ function Timer() {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("June 30,2022 ").getTime();
+    const countDownDate = new Date("June 30, 2022 ").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -42,19 +43,6 @@ function Timer() {
     startTimer();
   });
 
-  return (
-    <div className="Timer">
-      <Clock
-        timerDays={timerDays}
-        timerHours={timerHours}
-        timerMinutes={timerMinutes}
-        timerSeconds={timerSeconds}
-      />
-    </div>
-  );
-}
-
-const Clock = ({ timerDays, timerHours, timerMinutes, timerSeconds }) => {
   return (
     <Fragment>
       <section className="timer-container">
