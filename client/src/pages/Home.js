@@ -1,16 +1,19 @@
 import React from 'react';
 
+
 const Home = () => {
     return (
-        <main>
-            <div className="container">
-                <h1 className="text-center viewport-header">Welcome to the race of the year</h1>
-                <p>"life is short. Running make it seem longer." by Baron Hansen</p>
-                <video autoPlay loop muted>
-                    <source src="/images/runners.mp4" type='video/mp4' />
-                </video>
+        <>
+        <section classNameName="">
+            <div classNameName="container d-flex flex-column">
+                <h1 classNameName="text-center ">Welcome to the race of the year</h1>
+                <p>"Life is short. Running make it seem longer." by Baron Hansen</p>  
             </div>
-        </main>
+            <video autoPlay loop muted>
+                <source src="images/runners.mp4" type="video/mp4"></source>
+            </video>
+        </section>
+        </>
     )
 }
 

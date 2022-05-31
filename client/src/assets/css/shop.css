@@ -1,0 +1,29 @@
+/* products */
+
+.product-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-title {
+    text-align: center;
+}
+
+.product-price {
+    padding:0.5em 1.5rem;
+    font-size: 18px; 
+}
+
+/* cart */
+
+.cart-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-checkout-shop {
+    display: flex;
+    justify-content: space-between;
+}

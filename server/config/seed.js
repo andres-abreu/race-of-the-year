@@ -21,7 +21,7 @@ db.once('open', async () => {
       name: 'Mens T-Shirt',
       description:
         'Running Mens T-shirt, breathable, comformtable & sweat-proof',
-      image: 'mens-shirt 2.jpg',
+      image: '1.jpg',
       category: categories[0]._id,
       price: 39.99,
       quantity: 500
@@ -30,7 +30,7 @@ db.once('open', async () => {
       name: 'Womens T-Shirt',
       description:
         'Running Womens T-Shirt, breathable, comfortable & sweat-proof',
-      image: 'womens-shirt 2.jpg',
+      image: '2.jpg',
       category: categories[0]._id,
       price: 39.99,
       quantity: 500
@@ -40,7 +40,7 @@ db.once('open', async () => {
       category: categories[4]._id,
       description:
         'The best for running marathons',
-      image: 'mens-shorts 2.jpg',
+      image: '3.jpg',
       price: 45.99,
       quantity: 50
     },
@@ -49,7 +49,7 @@ db.once('open', async () => {
       category: categories[4]._id,
       description:
         'The best for running marathons, also, they are squat-proof',
-      image: 'womens-shorts 2.jpg',
+      image: '4.jpg',
       price: 45.99,
       quantity: 50
     },
@@ -58,7 +58,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Trail & Track Running Shoes, made for marathons',
-      image: 'mens-shoes 2.jpg',
+      image: '5.jpg',
       price: 79.99,
       quantity: 20
     },
@@ -67,7 +67,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Trail & Track Running Shoes, made for marathons',
-      image: 'womens-shoes 2.jpg',
+      image: '6.jpg',
       price: 79.99,
       quantity: 50
     },
@@ -76,7 +76,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Reduce, reuse, recycle & take your water everywhere!',
-      image: 'bottle-1 2.jpg',
+      image: '7.jpg',
       price: 30.99,
       quantity: 30
     },
@@ -85,7 +85,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Reduce, reuse, recycle & take your water everywhere!',
-      image: 'bottle-2 2.jpg',
+      image: '8.jpg',
       price: 30.99,
       quantity: 30
     },
@@ -94,7 +94,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         ' Protect your face & avoid premature wrinkles',
-      image: 'sunscreen-face 2.jpg',
+      image: '9.jpg',
       price: 30.99,
       quantity: 40
     },
@@ -102,7 +102,7 @@ db.once('open', async () => {
       name: 'Body Sunscreen - SPF 50',
       category: categories[4]._id,
       description: 'Do not be lobster, protect your body from nasty sunburns.',
-      image: 'sunscreen-body 2.jpg',
+      image: '10.jpg',
       price: 50.99,
       quantity: 40
     }
