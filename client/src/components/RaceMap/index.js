@@ -8,6 +8,11 @@ const RaceMap = () => {
             <img src="/images/raceMap.png" className="img-fluid p-3" alt="raceMap"></img>
             <Clock/>
         </div>   
+        <section>
+            <div>
+                <p></p>
+            </div>
+        </section>
         <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
     <div class="card">
