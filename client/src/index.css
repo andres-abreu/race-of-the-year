@@ -20,7 +20,7 @@
 
 /*---Menu link---*/
 .navbar ul {
-  /* margin-right: auto; */
+  margin-right: auto;
   text-decoration: none;
   font-size: 28px;
 }
@@ -93,5 +93,5 @@ td {
 }
 
 .table-list {
-  color: white;
+  color: rgb(0, 0, 0);
 }
