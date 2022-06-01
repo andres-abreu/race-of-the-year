@@ -25,7 +25,7 @@ function Nav() {
           </li>
           <li className="nav-item nav-link active">
             <Link style={{ textDecoration: 'none' }} to="/raceMap" className="link">
-              Race Map
+              Race Information
             </Link>
           </li>
         </ul>

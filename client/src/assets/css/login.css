@@ -1,15 +1,20 @@
-.login-body, .signup-body {
+.login-body {
     margin: auto;
     text-align: center;
     padding-top: 10%;
     padding-left: 30vw;
 }
 
+.signup-body {
+    margin: auto;
+    text-align: center;
+    padding-top: 10%;
+    width: 60%;
 
-
+}
 
 @media screen and (max-width: 575px) {
-    .login-body, .signup-body {
+    .login-body {
     font-size: 20px;
     padding-right: 30vw;
     padding-left: 30vw;

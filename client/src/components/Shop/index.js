@@ -62,12 +62,12 @@ const Shop = () => {
                 <button className="btn btn-primary" onClick={() => setPage("products")}>Back to Shop</button>
                 {cart.length && 
                 <div className="check-total-container">
-                <button className="btn btn-primary" onClick={() => setPage("checkout")}>Go to Checkout ${total}</button>
+                <button className="btn btn-primary">YOur Total is ${total}</button>
                 </div>}
             </div>
             <div className="container mt-5">
                 <div className="row">
-            {cart && 
+            {cart.length > 0 ?
             cart
             .map(product => (
                 <div key={product._id} className="col-md-4">
@@ -84,7 +84,7 @@ const Shop = () => {
                     </div>
                     
                 </div>
-            ))}
+            )) : <h1>You don’t have items on your cart, Buy something!</h1>}
             </div>
             </div>
 
@@ -92,17 +92,12 @@ const Shop = () => {
         )
     }
     
-    const renderCheckout = () => {
-        return (
-            <h1>Checkout</h1>
-        )
-    }
 
     return (
         <>
         {page === 'products' && renderProducts()}
         {page === 'cart' && renderCart()}
-        {page === 'checkout' && renderCheckout()}
+        
         </>
     )
 }
