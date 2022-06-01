@@ -62,29 +62,29 @@ const Shop = () => {
                 <button className="btn btn-primary" onClick={() => setPage("products")}>Back to Shop</button>
                 {cart.length && 
                 <div className="check-total-container">
-                <button className="btn btn-primary">Your total is ${total}</button>
+                <button className="btn btn-primary">YOur Total is ${total}</button>
                 </div>}
             </div>
             <div className="container mt-5">
                 <div className="row">
-            {cart.length > 0 ? 
+            {cart.length > 0 ?
             cart
             .map(product => (
                 <div key={product._id} className="col-md-4">
                     <div className="thumbnail">
                     <img className="card-img-top" src={`/images/${product.image}`} alt={product.name} />
-                        <div className="card-body cart-card-text">
-                            <h5 className="card-title">{product.name}</h5>
-                            <p className="card-text">{product.description}</p>
-                            <div className="card-footer text-muted">
-                                {product.price}
-                            </div>
-                            <button className="btn btn-primary" onClick={() => deleteProduct(product)}>Delete</button>
+                    <div className="card-body cart-card-text">
+                        <h5 className="card-title">{product.name}</h5>
+                        <p className="card-text">{product.description}</p>
+                        <div className="card-footer text-muted">
+                            {product.price}
                         </div>
+                        <button className="btn btn-primary" onClick={() => deleteProduct(product)}>Delete</button>
+                    </div>
                     </div>
                     
                 </div>
-            )) : <h1>You don't have items on your cart, Buy something!</h1>}
+            )) : <h1>You don’t have items on your cart, Buy something!</h1>}
             </div>
             </div>
 
