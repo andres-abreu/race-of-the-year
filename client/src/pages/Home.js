@@ -1,7 +1,5 @@
 import React from 'react';
 import Clock from '../components/Clock';
-import homepage from '../assets/css/homepage.css';
-
 
 const Home = () => {
     
