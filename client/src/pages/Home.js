@@ -8,16 +8,12 @@ const Home = () => {
         <>
         <Clock/>
         
-        <section classNameName="">
-            <div classNameName="container d-flex flex-column">
-                <h1 classNameName="text-center ">Welcome to the race of the year</h1>
-                <p>"Life is short. Running make it seem longer." by Baron Hansen</p>  
-            </div>
-            <video autoPlay muted loop id="thevideo">
-                <source src="images/runners.mp4" type="video/mp4"></source>
-            </video>
-        </section>
-        </>
+    <style>
+        body {
+            background-image: url('public/images/runner.jpg')
+            background-repeat: no-repeat;
+        }
+    </style>
     )
 }
 
