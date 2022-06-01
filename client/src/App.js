@@ -1,9 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, {useState, useEffect} from 'react';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import {ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
-import {setContext} from '@apollo/client/link/context';
+import 'bootstrap/js/dist/collapse.js';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
 import './assets/css/shop.css'
 import './assets/css/timer.css'
 import './assets/css/login.css'
@@ -21,12 +22,12 @@ const httpLink = createHttpLink({
   uri: '/graphql'
 });
 
-const authLink = setContext((_, {headers}) => {
+const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('id_token');
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}`: '',
+      authorization: token ? `Bearer ${token}` : '',
     },
   };
 });
@@ -39,19 +40,19 @@ const client = new ApolloClient({
 
 function App() {
   return (
-      <ApolloProvider client={client}>
-          <Router>
-            <Nav />
-            <Routes>  
-              <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} /> 
-              <Route path="/runnerList" element={<RunnerList />} />
-              <Route path="/shop" element={<Shop />} /> 
-              <Route path="/raceMap" element={<RaceMap />} />   
-            </Routes>
-          </Router>
-      </ApolloProvider>   
+    <ApolloProvider client={client}>
+      <Router>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/runnerList" element={<RunnerList />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/raceMap" element={<RaceMap />} />
+        </Routes>
+      </Router>
+    </ApolloProvider>
   );
 }
 

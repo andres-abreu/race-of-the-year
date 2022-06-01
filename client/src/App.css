@@ -6,7 +6,7 @@
 }
 
 :root {
-  --primary-white: black;
+  --primary-white: purple;
 }
 
 /*SignUp*/
@@ -38,7 +38,7 @@
 /*** Menu Links ********************************/
 
 nav a.nav-link {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   letter-spacing: 0.2rem;
 }
 
@@ -46,22 +46,30 @@ nav ul li {
   text-transform: uppercase;
 }
 
-.navbar-nav>li>a {
-margin-right: 0.75rem;
-margin-left: 0.75rem; 
-  color: var(--primary-white) !important;
+nav ul li a:hover {
+  text-shadow:0 0 10px purple;
 }
 
-.navbar-brand {
- max-width: 17.25rem; 
-padding:0 !important;
+.nav-item {
+  margin-right: 0.75rem !important;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.navbar-nav h1 {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  margin-left: 9rem !important;
 }
 
 
 th {
-  font-size:2em;
+  font-size: 2em;
 }
 
 td {
-  font-size:1.5em;
+  font-size: 1.5em;
 }
+
