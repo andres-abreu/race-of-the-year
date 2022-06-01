@@ -47,7 +47,8 @@ nav ul li {
 }
 
 nav ul li a:hover {
-  text-shadow:0 0 10px purple;
+  margin-right: 0.75rem;
+  color: #f1356d !important;
 }
 
 .nav-item {
