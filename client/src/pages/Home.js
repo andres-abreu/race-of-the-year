@@ -8,12 +8,16 @@ const Home = () => {
         <>
         <Clock/>
         
-    <style>
-        body {
-            background-image: url('public/images/runner.jpg')
-            background-repeat: no-repeat;
-        }
-    </style>
+        <section classNameName="">
+            <div classNameName="container d-flex flex-column">
+                <h1 classNameName="text-center "></h1>
+                <p></p>  
+            </div>
+            <video autoPlay muted loop id="">
+                <source src="public/images/runners.jpg" type=""></source>
+            </video>
+        </section>
+        </>
     )
 }
 
