@@ -4,8 +4,10 @@ import Clock from '../Clock'
 const RaceMap = () => {
     return (
         <>
-            <img src="/images/raceMap.png" alt="raceMap"></img>
+        <div className='flex-column'>
+            <img src="/images/raceMap.png" className='img-fluid p-3' alt="raceMap"></img>
             <Clock/>
+        </div>       
         </>
     )
 }

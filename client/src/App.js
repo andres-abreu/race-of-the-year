@@ -6,6 +6,7 @@ import {ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apol
 import {setContext} from '@apollo/client/link/context';
 import './assets/css/shop.css'
 import './assets/css/timer.css'
+import './assets/css/login.css'
 
 import Home from './pages/Home'
 import Nav from './components/Nav'

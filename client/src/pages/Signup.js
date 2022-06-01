@@ -34,50 +34,38 @@ const Signup = () => {
         }
     }
     return (
-        <main className="flex-row justify-center mb-4">
-            <div className="col-12 col-md-6">
-                <div className="card">
-                    <div className="card-body">
-                        <form onSubmit={handleFormSubmit}>
-                            <input className="form-input" 
-                            placeholder="First Name" 
-                            name="firstName" 
-                            type="text" 
-                            value={formState.firstName} 
-                            onChange={handleChange}
-                            />
-                            <input className="form-input"
-                            placeholder="Last Name"
-                            name="lastName"
-                            type="text"
-                            id="lastName"
-                            value={formState.lastName}
-                            onChange={handleChange}
-                            />
-                            <input className="form-input"
-                            placeholder="Email"
-                            name="email"
-                            type="email"
-                            id="email"
-                            value={formState.email}
-                            onChange={handleChange}
-                            />
-                            <input className="form-input"
-                            placeholder="Password"
-                            name="password"
-                            type="password"
-                            value={formState.password}
-                            onChange={handleChange}
-                            />
-                            <button className="btn d-block w-100" type="submit">
-                                Submit
-                            </button>
-                        </form>
-                        {error && <div>Signup failed</div>}
-                    </div>
-                </div>
+        <>
+        <form onSubmit= {handleFormSubmit} className="signup-body">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" class="form-control" id="first-name" placeholder="Enter your first name" value={formState.firstName} 
+                onChange={handleChange}
+                name="firstName"/>
             </div>
-        </main>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" class="form-control" id="last-name" placeholder="Enter your last name" value={formState.lastName} 
+                onChange={handleChange}
+                name="lastName"/>
+                
+            </div>
+            <div class="form-group">  
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                value={formState.email}
+                onChange={handleChange}
+                name="email"/>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password"
+                value={formState.password}
+                onChange={handleChange}
+                name="password"/>
+            </div> 
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+       </>
         )
     }
     

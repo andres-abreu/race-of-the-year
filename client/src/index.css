@@ -59,10 +59,10 @@ td {
 
 /****Home ***/
 .container video {
-  height: 100vh;
+  height: 300vh;
   max-height: 1600px;
-  overflow:hidden;
-  position: absolute;
+  overflow: hidden;
+  position: fixed;
   background-position: 50%;
   background-size: cover;
   margin: 0;  
