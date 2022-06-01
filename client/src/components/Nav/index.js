@@ -1,7 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth"
 import { Link } from "react-router-dom";
-import { Navbar, Nav } from 'react-bootstrap';
+import logo from "../Nav/marathon.png";
 
 function Navigation() {
 
@@ -70,9 +70,9 @@ function Navigation() {
             <li className="nav-item">
               <a className="nav-link active" href="#"><span className="sr-only">{showNavigation()}</span></a>
             </li>
-              <Link style={{ textDecoration: 'none' }} to="/">
-                <h1 className="nav-link">RACE OF THE YEAR</h1>
-              </Link>
+            <Link style={{ textDecoration: 'none' }} to="/">
+              <h1 className=" navbar-brand ">RACE OF THE YEAR <img src={logo} alt="logo" className="logoImg"/></h1>
+            </Link>
           </ul>
         </div>
       </div>
