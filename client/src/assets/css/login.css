@@ -9,7 +9,7 @@
     margin: auto;
     text-align: center;
     padding-top: 10%;
-    width: 60%;
+    width: 35%;
 
 }
 
@@ -21,4 +21,8 @@
     text-align: center;
 
     }
+}
+
+.btn {
+    margin-top: 5%;
 }
