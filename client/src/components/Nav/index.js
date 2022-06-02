@@ -100,7 +100,7 @@ function Navigation() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
+        <div className="navbar">
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link active" href="#">

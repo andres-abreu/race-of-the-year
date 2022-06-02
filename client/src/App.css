@@ -50,7 +50,7 @@ nav ul li {
 
 nav ul li a:hover {
   margin-right: 0.75rem;
-  color: #f1356d !important;
+  color: #0f0e0e !important;
 }
 
 .nav-item {
@@ -84,3 +84,12 @@ td {
   text-align: end;
 }
 
+
+/*** Home Links ********************************/
+
+.main-info {
+  position: relative;
+  background-image: url(C:\Users\me\Desktop\projects\race-of-the-year\client\src\components\Nav\marathon.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
