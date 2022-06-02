@@ -1,12 +1,19 @@
 import React from 'react';
-import Clock from '../components/Clock';
-import Footer from '../components/Footer';
+import Clock from '../components/Clock'; 
 const Home = () => {
 
     return (
         <>
         
         <Clock/>
+        
+        <section>
+            <div className="container d-flex flex-column">
+                <h1 className="text-center "></h1>
+                <p></p>  
+                <img src="/images/kidsrun.jpeg" className='homephoto img-fluid'/>
+            </div>        
+        </section>
 
         <div className="card text-center">
 
@@ -61,7 +68,6 @@ const Home = () => {
          </blockquote>
      </div>
     </div>
-    <Footer/>
         </>
             
     )
