@@ -8,9 +8,9 @@ const Home = () => {
         <>
         <Clock/>
         
-        <section classNameName="">
-            <div classNameName="container d-flex flex-column">
-                <h1 classNameName="text-center "></h1>
+        <section>
+            <div className="container d-flex flex-column">
+                <h1 className="text-center "></h1>
                 <p></p>  
                 <img src="/images/kidsrun.jpeg" className='homephoto img-fluid'/>
             </div>
@@ -18,24 +18,24 @@ const Home = () => {
                 
         </section>
 
-        <div class="card text-center">
-        <div class="card-header">
+        <div className="card text-center">
+        <div className="card-header">
          </div>
-        <div class="card-body">
-         <h5 class="card-title">CONGRATULATION ON REGISTERING!</h5>
-             <p class="card-text">Snag Your Official #RaceofTheYear Gear! 
+        <div className="card-body">
+         <h5 className="card-title">CONGRATULATION ON REGISTERING!</h5>
+             <p className="card-text">Snag Your Official #RaceofTheYear Gear! 
               Commemorate your experience with official gear, anniversary swag, or prep for 2023 with In-Training apparel!.</p>
-             <a href="#" class="btn btn-primary">Shop</a>
+             <a href="#" className="btn btn-primary">Shop</a>
          </div>
 
          <section>
-        <div class="card mb-3"><div class="card-header text-center text-danger"></div>
+        <div className="card mb-3"><div className="card-header text-center text-danger"></div>
         <br></br>
-        <h5 class="card-title">SUMMER RUNNING TIPS</h5>
-  <img src="images/summer-running.jpg" alt="woman running in the afternoon" class="card-img-top" alt="Wild Landscape"/>
-  <div class="card-body">
+        <h5 className="card-title">SUMMER RUNNING TIPS</h5>
+  <img src="images/summer-running.jpg" alt="woman running in the afternoon" className="card-img-top" alt="Wild Landscape"/>
+  <div className="card-body">
     
-    <p class="card-text text-justify">
+    <p className="card-text text-justify">
       
           1. Run by effort, not pace.
           <br></br>
@@ -48,8 +48,8 @@ const Home = () => {
           5. Wear breathable, light clothing to keep cool.
       
     </p>
-    <p class="card-text">
-      <small class="text-muted">Last updated June 1, 2022</small>
+    <p className="card-text">
+      <small className="text-muted">Last updated June 1, 2022</small>
     </p>
   </div>
 </div>
@@ -64,10 +64,10 @@ const Home = () => {
 
         </div>
 
-        <div class="card">
-         <div class="card-header text-center text-danger">DISCALIMER</div>
-         <div class="card-body">
-         <blockquote class="blockquote mb-0 text-center">
+        <div className="card">
+         <div className="card-header text-center text-danger">DISCALIMER</div>
+         <div className="card-body">
+         <blockquote className="blockquote mb-0 text-center">
          <img src="/images/firemyattorney.jpg" className="img-fluid"/>
           <p>
               <br></br>
@@ -76,7 +76,7 @@ const Home = () => {
           <br></br> 
          All participants will adhere to an arbitration in the event of a valid claim, please contact Shwarzt & Shwartz & Spielburger & Fries law-firm and ask for Sal. Have a great run! 
          </p>
-         <footer class="blockquote-footer">The Race of The Year Team</footer>
+         <footer className="blockquote-footer">The Race of The Year Team</footer>
          </blockquote>
      </div>
     </div>
