@@ -16,7 +16,7 @@ const Shop = () => {
     const renderProducts = () => {
         return (
             <>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button className="btn btn-primary btn-cart m-3" onClick={() => setPage("cart")}> Cart ({cart.length})</button>
             </div>
             

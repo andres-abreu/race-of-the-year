@@ -1,0 +1,18 @@
+.navbar-brand {
+    font-size: 3.2em;
+    color: black;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0;
+}
+
+.logoImg {
+    width: 6em;
+    margin: 0;
+}
+
+.logo-container {
+    width: 100%;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import Clock from '../components/Clock';
-
+import Footer from '../components/Footer';
 const Home = () => {
 
     return (
@@ -69,6 +69,7 @@ const Home = () => {
          </blockquote>
      </div>
     </div>
+    <Footer/>
         </>
             
     )

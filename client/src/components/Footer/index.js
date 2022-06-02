@@ -11,13 +11,13 @@ const Footer =()=>{
           Thank You for Visiting!
           <br></br>
           This race was brought to you by: 
-          <br></br>
-            Andres Abreu
-            <br></br>
-            Tiffany Landon
-            <br></br>
-            Maria Andrea Rodriguez
-            <br></br>
+          
+            Andres Abreu,
+            
+            Tiffany Landon,
+            
+            Maria Andrea Rodriguez,
+            
             William Piñero
           </p>
     </section>

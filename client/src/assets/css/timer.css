@@ -8,11 +8,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .clock {
   position: relative;
-  margin: a;
-  margin-left: 30%;
+  margin: auto;
+  margin-left: 35%;
   display: flex;
   justify-content: center;
   align-items: center;

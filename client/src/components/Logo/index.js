@@ -1,11 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Logo() {
 
 return(
-    <div className="text-center">
-        <h1 className="navbar-brand display-4">RACE OF THE YEAR <img src='/images/marathon.png' alt="logo" className="logoImg"/></h1>
-    </div>
+    <Link to="/" className="link">
+        <div className="text-center logo-container">
+            <img src='/images/marathon.png' alt="logo" className="logoImg"/>
+            <h1 className="navbar-brand">RACE OF THE YEAR </h1>
+        </div>
+    </Link>
+    
 
 )
 }

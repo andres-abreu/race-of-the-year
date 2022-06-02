@@ -1,13 +1,12 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-import logo from "../Nav/marathon.png";
 
 function Navigation() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg m-0 main-nav">
           <div className="navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">

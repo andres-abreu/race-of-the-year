@@ -3,7 +3,9 @@
 /* base styles */
 * {
   font-family: "Bebas Neue";
+  text-decoration: none;
 }
+
 
 :root {
   --primary-white: purple;
@@ -34,12 +36,12 @@
 }
 
 
-
 /*** Menu Links ********************************/
 
 nav a.nav-link {
-  font-size: 1.25rem;
+  font-size: 1.9rem;
   letter-spacing: 0.2rem;
+  padding: 1px;
 }
 
 nav ul li {
@@ -81,3 +83,4 @@ td {
 .nav-brand{
   text-align: end;
 }
+
