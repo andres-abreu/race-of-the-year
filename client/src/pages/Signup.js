@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import Auth from '../utils/auth'
 
 const Signup = () => {
+
     const [formState, setFormState] = useState({
         firstName: '',
         lastName: '',
