@@ -107,9 +107,6 @@ function Navigation() {
                 <span className="sr-only">{showNavigation()}</span>
               </a>
             </li>
-            <Link style={{ textDecoration: 'none' }} to="/">
-              <h1 className=" nav-link ">RACE OF THE YEAR </h1>
-            </Link>
           </ul>
         </div>
       </div>
