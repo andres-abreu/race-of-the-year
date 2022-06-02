@@ -5,12 +5,12 @@ const RaceMap = () => {
     return (
         <>
         <div className=" container flex-column">
-            <img src="/images/raceMap.png" classNameName="img-fluid p-3" alt="raceMap"></img>
+            <img src="/images/raceMap.png" className="img-fluid p-3" alt="raceMap"></img>
         </div>   
         <div className="row row-cols-1 row-cols-md-2 g-4">
   <div className="col">
     <div className="card">
-      <img src="/images/startrace.jpeg"className="card-img-top" alt="Race starting point"/>
+      <img src="/images/startrace.jpeg"className="card-img-top p-3" alt="Race starting point"/>
       <div className="card-body">
         <h5 className="card-title">Schedule</h5>
         <p className="card-text">
@@ -26,7 +26,7 @@ const RaceMap = () => {
   </div>
   <div className="col">
     <div className="card">
-      <img src="images/registration.jpg" className="card-img-top" alt="Registration form"/>
+      <img src="images/registration.jpg" className="card-img-top p-3" alt="Registration form"/>
       <div className="card-body">
         <h5 className="card-title">Registration Prices</h5>
         <p className="card-text">
@@ -42,7 +42,7 @@ const RaceMap = () => {
   </div>
   <div className="col">
     <div className="card">
-      <img src="images/communitypark.jpeg" className="card-img-top" alt="Marathon, Fl Community Park"/>
+      <img src="images/communitypark.jpeg" className="card-img-top p-3" alt="Marathon, Fl Community Park"/>
       <div className="card-body">
         <h5 className="card-title">Packet Pickup</h5>
         <p className="card-text">
@@ -58,13 +58,14 @@ const RaceMap = () => {
   </div>
   <div className="col">
     <div className="card">
-      <img src="images/covid-update.jpeg" className="card-img-top" alt="covid-19 update"/>
+      <img src="images/covid-update.jpeg" className="card-img-top p-3" alt="covid-19 update"/>
       <div className="card-body">
         <h5 className="card-title">Covid-19 Updates</h5>
         <p className="card-text">
         We expect to host our event without issue & can’t wait to have you run with us. 
         <br></br>
         However, if you have tested positive for Covid-19 the day of the race, please stay home.
+        <br></br>
         <br></br>
         No refunds will be returned.
         </p>
