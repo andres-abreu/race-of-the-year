@@ -18,7 +18,7 @@ import RunnerList from './components/RunnersList'
 import Shop from './components/Shop'
 import RaceMap from './components/RaceMap'
 import Footer from './components/Footer'
-
+import Logo from './components/Logo'
 
 const httpLink = createHttpLink({
   uri: '/graphql'
@@ -44,6 +44,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
+        <Logo/>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
