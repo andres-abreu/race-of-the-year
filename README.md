@@ -11,5 +11,3 @@ The Race of the year is an event web-site in which provides registration-managem
 ## DEMONSTRATION
 
 ## DEPLOYMENT LINK
-
-mongodb+srv://Will:93101231947@cluster0.au6l71h.mongodb.net/race-of-the-year?retryWrites=true&w=majority
