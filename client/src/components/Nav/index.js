@@ -100,13 +100,16 @@ function Navigation() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
+        <div className="navbar">
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link active" href="#">
                 <span className="sr-only">{showNavigation()}</span>
               </a>
             </li>
+            <Link style={{ textDecoration: 'none' }} to="/">
+              <h1 className=" nav-link ">RACE OF THE YEAR </h1>
+            </Link>
           </ul>
         </div>
       </div>

@@ -84,3 +84,12 @@ td {
   text-align: end;
 }
 
+
+/*** Home Links ********************************/
+
+.main-info {
+  position: relative;
+  background-image: url(C:\Users\me\Desktop\projects\race-of-the-year\client\src\components\Nav\marathon.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
