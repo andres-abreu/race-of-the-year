@@ -33,7 +33,7 @@ const Home = () => {
         <div className="card mb-3"><div className="card-header text-center text-danger"></div>
         <br></br>
         <h5 className="card-title">SUMMER RUNNING TIPS</h5>
-  <img src="images/summer-running.jpg" alt="woman running in the afternoon" className="card-img-top" alt="Wild Landscape"/>
+  <img src="images/summer-running.jpg" alt="woman running in the afternoon" className="card-img-top"/>
   <div className="card-body">
     
     <p className="card-text text-justify">
