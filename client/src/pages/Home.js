@@ -30,6 +30,7 @@ const Home = () => {
 
          <section>
         <div class="card mb-3"><div class="card-header text-center text-danger"></div>
+        <br></br>
         <h5 class="card-title">SUMMER RUNNING TIPS</h5>
   <img src="images/summer-running.jpg" alt="woman running in the afternoon" class="card-img-top" alt="Wild Landscape"/>
   <div class="card-body">
@@ -50,15 +51,6 @@ const Home = () => {
     <p class="card-text">
       <small class="text-muted">Last updated June 1, 2022</small>
     </p>
-    <blockquote class="blockquote mb-0 text-center">
-    <img src="/images/firemyattorney.jpg" className="img-fluid"/>
-      <p>
-      All participants in joinder with this run-marathon-contract are with the knowledge and acceptance of the Terms and Conditions.
-      Run of The Year Marathon will not be liable for any damages, accidents, weight-loss, smelly-clothes during the race and as-well-as mis-matched-shoes or mis-sized clothing from our online-store-orders.
-      All participants will adhere to an arbitration in the event of a valid claim, please contact Shwarzt & Shwartz & Spielburger & Fries law-firm and ask for Sal. Have a great run! 
-      </p>
-      <footer class="blockquote-footer">The Race of The Year Team</footer>
-    </blockquote>
   </div>
 </div>
         </section>
@@ -76,7 +68,9 @@ const Home = () => {
          <div class="card-header text-center text-danger">DISCALIMER</div>
          <div class="card-body">
          <blockquote class="blockquote mb-0 text-center">
+         <img src="/images/firemyattorney.jpg" className="img-fluid"/>
           <p>
+              <br></br>
          All participants in joinder with this run-marathon-contract are with the knowledge and acceptance of the Terms and Conditions.  
          Run of The Year Marathon will not be liable for any damages, accidents, weight-loss, smelly-clothes during the race and as-well-as mis-matched-shoes or mis-sized clothing from our online-store-orders.
           <br></br> 
