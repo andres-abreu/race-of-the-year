@@ -6,7 +6,6 @@ const Home = () => {
     return (
         <>
         
-        
         <Clock/>
         
         <section>
@@ -14,54 +13,43 @@ const Home = () => {
                 <h1 className="text-center "></h1>
                 <p></p>  
                 <img src="/images/kidsrun.jpeg" className='homephoto img-fluid'/>
-            </div>
-            
-                
+            </div>        
         </section>
 
         <div className="card text-center">
-        <div className="card-header">
-         </div>
-        <div className="card-body">
-         <h5 className="card-title">CONGRATULATION ON REGISTERING!</h5>
-             <p className="card-text">Snag Your Official #RaceofTheYear Gear! 
-              Commemorate your experience with official gear, anniversary swag, or prep for 2023 with In-Training apparel!.</p>
-             <a href="#" className="btn btn-primary">Shop</a>
-         </div>
 
-         <section>
-        <div className="card mb-3"><div className="card-header text-center text-danger"></div>
-        <br></br>
-        <h5 className="card-title">SUMMER RUNNING TIPS</h5>
-  <img src="images/summer-running.jpg" alt="woman running in the afternoon" className="card-img-top"/>
-  <div className="card-body">
-    
-    <p className="card-text text-justify">
-      
-          1. Run by effort, not pace.
-          <br></br>
-          2. Run when the termperature is the coolest. Early AM or late PM.
-          <br></br>
-          3. Hydrate before, during and after your run.
-          <br></br>
-          4. Try to run in the shade as much as possible.
-          <br></br>
-          5. Wear breathable, light clothing to keep cool.
-      
-    </p>
-    <p className="card-text">
-      <small className="text-muted">Last updated June 1, 2022</small>
-    </p>
-  </div>
-</div>
-        </section>
+            <section>
+                <div className="card mb-3"><div className="card-header text-center text-danger"></div>
+                <br></br>
+                    <h5 className="card-title">SUMMER RUNNING TIPS</h5>
+                    <img src="images/summer-running.jpg" alt="woman running in the afternoon" className="card-img-top"/>
+                    <div className="card-body">
+            
+                        <p className="card-text text-justify">
+                        1. Run by effort, not pace.
+                        <br></br>
+                        2. Run when the termperature is the coolest. Early AM or late PM.
+                        <br></br>
+                        3. Hydrate before, during and after your run.
+                        <br></br>
+                        4. Try to run in the shade as much as possible.
+                        <br></br>
+                        5. Wear breathable, light clothing to keep cool.
+                    
+                        </p>
+                <p className="card-text">
+                    <small className="text-muted">Last updated June 1, 2022</small>
+                </p>
+                    </div>
+                </div>
+            </section>
 
 
-        <section>
-            <div>
-                <p></p>
-            </div>
-        </section>
+            <section>
+                <div>
+                    <p></p>
+                </div>
+            </section>
 
         </div>
 

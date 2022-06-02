@@ -116,12 +116,7 @@ db.once('open', async () => {
     firstName: 'Pamela',
     lastName: 'Washington',
     email: 'pamela@testmail.com',
-    password: 'password12345',
-    orders: [
-      {
-        products: [products[0]._id, products[0]._id, products[1]._id]
-      }
-    ]
+    password: 'password12345'
   });
 
   await User.create({
@@ -131,6 +126,87 @@ db.once('open', async () => {
     password: 'password12345'
   });
 
+  await User.create({
+    firstName: 'Tim',
+    lastName: 'McDonald',
+    email: 'ehowerewrewrewrlt@testmail.com',
+    password: 'password12345'
+  });
+
+  await User.create({
+    firstName: 'Pepe',
+    lastName: 'El Trompeta',
+    email: 'pepito@testmail.com',
+    password: 'password12345'
+  });
+
+  await User.create({
+    firstName: 'Harry',
+    lastName: 'Potter',
+    email: 'sdasadsad@testmail.com',
+    password: 'password12345'
+  });
+
+  await User.create({
+    firstName: 'Harry',
+    lastName: 'Potter',
+    email: 'ehosadfdasfflt@testmail.com',
+    password: 'password12345'
+  });
+  await User.create({
+    firstName: 'Harry',
+    lastName: 'Potter',
+    email: 'ehoasdsadasdaslt@testmail.com',
+    password: 'password12345'
+  });
+  await User.create({
+    firstName: 'Harry',
+    lastName: 'Potter',
+    email: 'eholtasdasdsafsaf@testmail.com',
+    password: 'password12345'
+  });
+  await User.create({
+    firstName: 'Harry',
+    lastName: 'Potter',
+    email: 'eholtasdwqeqw@testmail.com',
+    password: 'password12345'
+  });
+  await User.create({
+    firstName: 'Harry',
+    lastName: 'Potter',
+    email: 'eholweret@testmail.com',
+    password: 'password12345'
+  });
+  await User.create({
+    firstName: 'Harry',
+    lastName: 'Potter',
+    email: 'ehoewrewrwerlt@testmail.com',
+    password: 'password12345'
+  });
+  await User.create({
+    firstName: 'Harry',
+    lastName: 'Potter',
+    email: 'eholwerewrwet@testmail.com',
+    password: 'password12345'
+  });
+  await User.create({
+    firstName: 'Harry',
+    lastName: 'Potter',
+    email: 'eholewrewrwet@testmail.com',
+    password: 'password12345'
+  });
+  await User.create({
+    firstName: 'Harry',
+    lastName: 'Potter',
+    email: 'eholewrewrewt@testmail.com',
+    password: 'password12345'
+  });
+  await User.create({
+    firstName: 'Harry',
+    lastName: 'Potter',
+    email: 'ehoewrwerewlt@testmail.com',
+    password: 'password12345'
+  });
   console.log('users seeded');
 
   process.exit();
