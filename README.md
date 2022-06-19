@@ -10,9 +10,11 @@
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react"/>
   <img src="https://img.shields.io/badge/GraphQl-E10098?style=for-the-badge&logo=graphql&logoColor=white" alt"graphql"/>
   <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white" alt"jwt"/>
-  </div>
+  <br/>
+  <br/>
+</div>
 
-The Race of the year is an event web-site in which provides registration-management, runner-support-products and marathon-information. Participants are able to sign-up, log-in & log-out buy products.
+* The Race of the year is an event web-site in which provides registration-management, runner-support-products and marathon-information. Participants are able to sign-up, log-in & log-out buy products.
 
 ## VIDEO-DEMO
 
